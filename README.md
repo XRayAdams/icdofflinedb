@@ -30,13 +30,13 @@ This application requires the SQLite 3 library to be installed on your system.
 **Ubuntu/Debian:**
 
 ```bash
-sudo apt-get install libsqlite3-0
+sudo apt-get -y install libsqlite3-0 libsqlite3-dev
 ```
 
 **Fedora/CentOS/RHEL:**
 
 ```bash
-sudo dnf install sqlite
+sudo dnf install sqlite-devel
 ```
 
 ## Installation sources
