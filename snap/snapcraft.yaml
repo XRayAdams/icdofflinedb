@@ -1,0 +1,32 @@
+title: ICD Offline Database
+name: icdofflinedb
+version: 1.0.1+1
+summary: ICD Offline Database
+description: ICD Offline Database is a free and open-source application that allows users to search through the entire ICD-10 and ICD-9 databases of codes.
+contact: xrayadamo@gmail.com
+icon: snap/gui/icdofflinedb.png
+confinement: strict
+base: core22
+grade: stable
+license: MIT
+source-code: https://github.com/XRayAdams/icdofflinedb
+website: https://www.rayadams.app
+
+architectures:
+  - build-on: amd64
+  - build-on: arm64
+
+apps:
+  icdofflinedb:
+    command: icdofflinedb
+    extensions: [gnome]
+    plugs:
+      - network
+parts:
+  icdofflinedb:
+    source: .
+    plugin: flutter
+    flutter-target: lib/main.dart
+    stage-packages:
+      - libsqlite3-0
+      - libsqlite3-dev
