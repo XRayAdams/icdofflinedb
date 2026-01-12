@@ -2,6 +2,7 @@
 
 ICD Offline Database is a free and open-source application that allows users to search through the entire ICD-10 and ICD-9 databases of codes.
 
+Project moved to [https://github.com/XRayAdams/icdofflinedb-rs]
 ## Features:
 
 *   Search through the whole ICD-10 and ICD-9 databases.
